@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="u9V-B7-M28">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationColors" id="v98-gy-obA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="history" id="avS-MQ-L7u"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="kO3-0w-4gz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="E1e-TA-6YJ" kind="relationship" relationship="rootViewController" id="yjk-Zr-ZlR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGP-nb-lI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1001" y="75"/>
+        </scene>
+        <!--Red-->
+        <scene sceneID="0bx-m6-Qxj">
+            <objects>
+                <viewController id="E1e-TA-6YJ" customClass="RedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYg-sM-IS0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="AZ9-R5-IHU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red" id="KMi-xj-3ol">
+                        <barButtonItem key="rightBarButtonItem" title="Green" id="N0p-X8-4Mi">
+                            <connections>
+                                <segue destination="AhR-WB-CBq" kind="show" id="k1r-Vq-wVk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixa-FG-P9K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-223" y="75"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="Jh8-1p-aXG">
+            <objects>
+                <viewController id="AhR-WB-CBq" customClass="NumberedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WwU-y0-Fv1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="5dI-ik-ptp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Green" id="Aej-bG-r2y" customClass="Numbered">
+                        <rightBarButtonItems>
+                            <barButtonItem title="Purple" id="cT2-IH-TMN">
+                                <connections>
+                                    <segue destination="50C-Ds-pSh" kind="show" id="dwt-7h-8jh"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Blue" id="YUh-hC-HYz">
+                                <connections>
+                                    <segue destination="djP-cK-VSK" kind="show" id="cTX-MT-BsO"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vr0-K2-iBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="74"/>
+        </scene>
+        <!--Purple-->
+        <scene sceneID="fQO-Tt-cOk">
+            <objects>
+                <viewController id="50C-Ds-pSh" customClass="NumberedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQx-cO-f2S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7c0-1P-aB7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Purple" id="iap-Dc-VGm">
+                        <barButtonItem key="rightBarButtonItem" title="Orange" id="z5U-tE-5as">
+                            <connections>
+                                <segue destination="BbN-AW-EnS" kind="show" id="SYK-BG-sa5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xCA-ug-tpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581" y="437"/>
+        </scene>
+        <!--Blue-->
+        <scene sceneID="X40-dr-cns">
+            <objects>
+                <viewController id="djP-cK-VSK" customClass="NumberedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7GJ-GB-kl8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="E79-ck-nwc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Blue" id="RvD-Gy-Hwj">
+                        <barButtonItem key="rightBarButtonItem" title="Yellow" id="5xd-LP-aq3">
+                            <connections>
+                                <segue destination="ocA-DU-kh8" kind="show" id="oe3-hs-hCJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHq-GK-8QX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="-256"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="iz5-Sr-rRs">
+            <objects>
+                <viewController id="ocA-DU-kh8" customClass="NumberedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Bn-qM-gQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="FEs-JC-j0k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="zkt-RU-jWU">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="OfC-xf-f6H">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="ocA-DU-kh8" id="fvL-FE-gcI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zg5-Oh-8Qd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="-258"/>
+        </scene>
+        <!--Orange-->
+        <scene sceneID="G7f-RY-sVm">
+            <objects>
+                <viewController id="BbN-AW-EnS" customClass="NumberedViewController" customModule="ColorScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dW9-ro-def">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lqx-uH-1BB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Orange" id="hjW-nb-PEo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uJ2-X7-gi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368" y="437"/>
+        </scene>
+    </scenes>
+</document>
